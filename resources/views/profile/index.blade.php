@@ -26,9 +26,9 @@
                         @if(!@empty($user->profile))
                         <table>
                             <tr>
-                                <td>Nama Lengkap</td>
+                                <td>username</td>
                                 <td>:</td>
-                                <td>{{$user->profile->nama_lengkap}}</td>
+                                <td>{{$user->name}}</td>
                             </tr>
                             <tr>
                                 <td>Email</td>
@@ -39,6 +39,11 @@
                                 <td>Pekerjaan</td>
                                 <td>:</td>
                                 <td>{{$user->profile->pekerjaan}}</td>
+                            </tr>
+                            <tr>
+                                <td>Nama Lengkap</td>
+                                <td>:</td>
+                                <td>{{$user->profile->nama_lengkap}}</td>
                             </tr>
                             <tr>
                                 <td>No Telp </td>
